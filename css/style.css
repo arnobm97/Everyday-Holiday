@@ -1,0 +1,47 @@
+/* Mulish font link */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Mulish:wght@300;400;700;800&display=swap');
+*{
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+}
+header{
+    padding: 50px 125px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight:400 ;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color: #424247;
+}
+nav > h3{
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+h3 >span{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #FF5400;
+}
+.logo{
+    width: 48px;
+    height: 56.008px;
+}
+nav ul li span{
+    color: #FF5400;
+    font-weight: 700;
+}
