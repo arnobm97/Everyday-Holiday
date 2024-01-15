@@ -7,6 +7,7 @@
 header{
     padding: 50px 125px;
 }
+/* navbar css */
 nav{
     display: flex;
     justify-content: space-between;
@@ -44,4 +45,177 @@ h3 >span{
 nav ul li span{
     color: #FF5400;
     font-weight: 700;
+}
+/* banner css */
+.banner{
+    width: 1170px;
+    height: 500px;
+    border-radius: 16px;
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%) , url('../images/Group\ 13\ \(1\)\ \(1\).png');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.banner-title{
+    color: #FFF;
+    font-size: 3.5rem ;
+    font-weight: 800;
+}
+.banner-descrip{
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 48px;
+}
+.banner h2{
+    margin-top: 100px;
+    margin-bottom: 24px;
+}
+.banner-inputboxes{
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+.select-box1{
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    font-size: 1rem;
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+    padding-right: 50px;
+    border: none;
+}
+.select-box2{
+    min-width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    font-size: 1rem;
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+    padding-right: 25px;
+    border: none;
+}
+.input-box{
+    min-width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    font-size: 1rem;
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+    border: none;
+}
+#banner-btn{
+    min-width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    font-weight: 700;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 5px;
+}
+.hamburger-icon{
+    display: none;
+}
+/* popular section css */
+.popular-section{
+    display: flex;
+    width: 1170px;
+    height: 550px;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+}
+.popular-title{
+    color: #131318;
+    font-size: 2.22rem;
+    font-weight: 800;
+    margin-top:15px ;
+}
+.popular-leftpart{
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+}
+.popular-rightpart{
+    width: 540px;
+    height: 550px;
+}
+.popular-section ul li,.popular-second-descrip{
+    margin-bottom: 20px;
+}
+.popular-btn{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 800;
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+}
+/* responsive css for mobile screens */
+@media only screen and (max-width: 600px){
+    /* banner responsive css */
+    nav ul{
+       display: none;
+    }
+    .hamburger-icon{
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-top: 20px;
+    }
+    header{
+        padding: 10px 20px;
+    }
+    .banner{
+        flex-direction: column;
+        width: 335px;
+        height: 483px;
+    }
+    .banner-inputboxes{
+        flex-direction: column;
+    }
+    .banner-title,.popular-title{
+        font-size: 1.375rem;
+    }
+    .banner-descrip ,.popular-second-descrip,.popular-first-descrip,.popular-section ul li{
+        font-size: 0.77rem;
+        margin-bottom: 20px;
+    }
+    .banner h2{
+        margin-top: 20px;
+    }
+    .select-box1,.select-box2,#banner-btn{
+        width: 224px;
+    }
+    /* popular-section responsive css  */
+    .popular-section{
+        flex-direction: column;
+        margin: 0 auto;
+        width: 335px;
+        height: 483px; 
+    }
+    .popular-btn{
+        margin-bottom: 20px;
+    }
+    .popular-rightpart img{
+        width: 335px;
+        height: 342px;
+    }
 }
