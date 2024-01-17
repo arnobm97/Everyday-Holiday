@@ -489,10 +489,10 @@ hr{
     }
     /* popular-section responsive css  */
     .popular-section{
-        flex-direction: column;
-        margin: 0 auto;
         width: 335px;
         height:700px;
+        flex-direction: column;
+        margin: 0 auto;
     }
     .popular-btn{
         margin-bottom: 20px;
@@ -572,8 +572,8 @@ hr{
         border-radius: 10.569px;
         font-size: .8611rem;
         position: absolute;
-       top: 568%;
-       left: 42%;
+       top: 570.9%;
+       left: 41.5%;
         
      }
      .newsletter-img-btn span{
