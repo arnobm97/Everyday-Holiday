@@ -170,7 +170,7 @@ nav ul li span{
 .destination-section{
     width: 100%;
 }
-.destination-header,.choose-title{
+.destination-header,.choose-title,.food-title{
     color: #131318;
     font-size: 2.2rem;
     font-weight: 800;
@@ -178,10 +178,11 @@ nav ul li span{
     margin-top: 120px;
     text-align: center;
 }
-.destination-descrip,.choose-descrip{
+.destination-descrip,.choose-descrip,.food-descrip{
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     margin-bottom: 24px;
+    font-size: 1rem;
 }
 
 .destination-images{
@@ -271,6 +272,70 @@ nav ul li span{
     font-weight: 800;
     margin-bottom: 0;
 }
+/* food section css */
+.food-places-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.food-places-firstrow{
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+} 
+.food-places-secondrow{
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+}
+.food-places h2{
+    margin: 0;
+}
+  .food-places {
+    margin: 40px;
+    position: relative;
+    max-width: 250px;
+    max-height: 350px;
+    box-shadow: 0 40px 60px -6px black;
+  }
+  
+  .food-places-title {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 1.11rem;
+    background-color: #FF5400;
+    padding: 2%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  
+  .food-places img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+  }
+  
+  .food-places-desc {
+    display: block;
+    font-size: 1rem;
+    position: absolute;
+    height: 0;
+    top: -8%;
+    opacity: 0;
+    padding: 18px 8%;
+    background-color: white;
+    overflow-y: scroll;
+    color: #5A5A5D;
+    transition: 0.8s ease;
+  }
+  
+  .food-places:hover .food-places-desc {
+    opacity: 1;
+    height: 100%;
+  }
+  
 /* why choose section css */
 .choose-icon img{
     height: 64px;
@@ -399,7 +464,7 @@ nav ul li span{
     height: 500px;
     background: rgba(19, 19, 24, 0.05);
     position: absolute;
-    top: 430%;
+    top: 550%;
     margin: 0 auto;
 }
 .footer-title{
@@ -474,10 +539,10 @@ hr{
     .banner-inputboxes{
         flex-direction: column;
     }
-    .banner-title,.popular-title{
+    .banner-title,.popular-title,.food-title{
         font-size: 1.375rem;
     }
-    .banner-descrip ,.popular-second-descrip,.popular-first-descrip,.popular-section ul li{
+    .banner-descrip ,.popular-second-descrip,.popular-first-descrip,.popular-section ul li,.food-descrip{
         font-size: 0.77rem;
         margin-bottom: 20px;
     }
@@ -525,6 +590,22 @@ hr{
     .destination-image-container5{
         background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../images/Rectangle\ 9\ \(2\).png);
     }
+    /* food section responsive css */
+    .food-places-container{
+        width: 450px;
+        margin: 0 auto;
+    }
+    .food-places-firstrow,.food-places-secondrow{
+        flex-direction: column; 
+    }
+    .food-places:hover .food-places-desc {
+        opacity: 1;
+        height: 100%;
+      }
+      .food-descrip{
+        font-size: .77rem;
+      }
+    
     /* why choose responsive css */
      .choose-points-frst-row,.newsletter-section{
         flex-direction: column;
@@ -572,7 +653,7 @@ hr{
         border-radius: 10.569px;
         font-size: .8611rem;
         position: absolute;
-       top: 570.9%;
+       top: 858.9%;
        left: 41.5%;
         
      }
